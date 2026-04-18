@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng addEventListener</title>
+    <style>
+        /* CSS Reset cơ bản */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        section {
+            margin: 1rem auto;
+            padding: 1rem;
+            width: 500px;
+            border: 1px solid green;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        button {
+            background-color: green;
+            color: #fff;
+            padding: 1rem 2rem;
+            margin: 1rem auto;
+            border: none;
+            border-radius: 999px; /* Tạo hình viên thuốc */
+            font-size: 2rem;
+            cursor: pointer;
+            display: block;
+        }
+
+        span {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>addEventListener</h1>
+        <button>click here</button> <br>
+        <span>Số lần click: 0</span>
+    </section>
+
+    <script>
+        // Khởi tạo biến đếm
+        let dem = 0;
+
+        // Truy xuất đến nút bấm và thêm bộ lắng nghe sự kiện 'click'
+        document.querySelector("button").addEventListener('click', function() {
+            // Mỗi lần click, tăng biến đếm lên 1
+            dem++;
+            
+            // Hiển thị kết quả mới vào thẻ span
+            document.querySelector("span").innerHTML = "Số lần click: " + dem;
+        });
+    </script>
+
+</body>
+</html>
