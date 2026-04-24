@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edmin - Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="#" class="brand">Edmin</a>
+            <div class="top-icons">
+                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                <a href="#"><i class="fa-regular fa-eye"></i></a>
+                <a href="#"><i class="fa-solid fa-chart-bar"></i></a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="">
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <a href="#" class="nav-item">Dropdown <i class="fa-solid fa-caret-down"></i></a>
+            <a href="#" class="nav-item">Support</a>
+            <a href="#" class="nav-user">
+                <img src="https://via.placeholder.com/30" alt="User">
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <aside class="sidebar">
+            <ul class="nav-sidebar">
+                <li><a href="#"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fa-solid fa-bullhorn"></i> News Feed</a></li>
+                <li><a href="#"><i class="fa-solid fa-inbox"></i> Inbox <span class="badge badge-green">11</span></a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-list-check"></i> Tasks <span
+                            class="badge badge-orange">19</span></a></li>
+                <li><a href="#"><i class="fa-brands fa-bootstrap"></i> Buttons</a></li>
+                <li><a href="#"><i class="fa-solid fa-font"></i> Typography</a></li>
+                <li class="active"><a href="#"><i class="fa-solid fa-table-list"></i> Forms</a></li>
+                <li><a href="#"><i class="fa-solid fa-table"></i> Tables</a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-pie"></i> Charts</a></li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fa-solid fa-gear"></i> More Pages <i
+                            class="fa-solid fa-chevron-down submenu-icon"></i></a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="panel">
+                <div class="panel-heading">Forms</div>
+                <div class="panel-body">
+
+                    <div class="alert alert-warning">
+                        Warning! Something fishy here!
+                        <button class="close">&times;</button>
+                    </div>
+                    <div class="alert alert-danger">
+                        Oh snap! Whats wrong with you?
+                        <button class="close">&times;</button>
+                    </div>
+                    <div class="alert alert-success">
+                        Well done! Now you are listening me :)
+                        <button class="close">&times;</button>
+                    </div>
+
+                    <form class="form-horizontal">
+
+                        <div class="form-group">
+                            <label class="control-label">Basic Input</label>
+                            <div class="controls">
+                                <input type="text" class="form-control" placeholder="Type something here...">
+                                <span class="help-block">Minimum 5 Characters</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Disabled Input</label>
+                            <div class="controls">
+                                <input type="text" class="form-control" placeholder="You can't type something here..."
+                                    disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Tooltip Input</label>
+                            <div class="controls">
+                                <input type="text" class="form-control" placeholder="Hover to view the tooltip...">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Prepended Input</label>
+                            <div class="controls">
+                                <div class="input-group">
+                                    <span class="input-group-addon">#</span>
+                                    <input type="text" class="form-control" placeholder="prepend">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Appended Input</label>
+                            <div class="controls">
+                                <div class="input-group" style="width: 200px;">
+                                    <input type="text" class="form-control" value="5.000">
+                                    <span class="input-group-addon">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Dropdown Button</label>
+                            <div class="controls">
+                                <button type="button" class="btn btn-default dropdown-toggle">Dropdown Button <span
+                                        class="caret"></span></button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Dropdown</label>
+                            <div class="controls">
+                                <select class="form-control">
+                                    <option>Select here..</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Radiobuttons</label>
+                            <div class="controls">
+                                <div class="radio">
+                                    <label><input type="radio" name="optionsRadios" value="option1"> Option one</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optionsRadios" value="option2"> Option two</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optionsRadios" value="option3"> Option
+                                        three</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Inline Radiobuttons</label>
+                            <div class="controls">
+                                <label class="radio-inline"><input type="radio" name="inlineRadioOptions"
+                                        value="option1" checked> Option one</label>
+                                <label class="radio-inline"><input type="radio" name="inlineRadioOptions"
+                                        value="option2"> Option two</label>
+                                <label class="radio-inline"><input type="radio" name="inlineRadioOptions"
+                                        value="option3"> Option three</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Checkboxes</label>
+                            <div class="controls">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value=""> Option one</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value=""> Option two</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value=""> Option three</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Inline Checkboxes</label>
+                            <div class="controls">
+                                <label class="checkbox-inline"><input type="checkbox" value=""> Option one</label>
+                                <label class="checkbox-inline"><input type="checkbox" value=""> Option two</label>
+                                <label class="checkbox-inline"><input type="checkbox" value=""> Option three</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Textarea</label>
+                            <div class="controls">
+                                <textarea class="form-control" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="controls submit-controls">
+                                <button type="submit" class="btn btn-default">Submit Form</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2014 Edmin - <a href="#">EGrappler.com</a> All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
